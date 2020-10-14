@@ -20,17 +20,20 @@ class PimmelController : UIViewController {
     private var sliderMovement : directions = .up
     private var sliderTimer : DispatchSourceTimer?
     
-    var picture = UIImage(named: "pimmelPic.png")
+    var pictureId = 0
+    var pimmelColor : UIColor = .black
     
+    let pictureName = "pimmel_"
     let angleIncrement : CGFloat = 0.2
     let timeForAnimation = 0.025
-    let sliderSpeed = 0.5
+    let sliderSpeed = 10 //Zeit in Sekunden für einen Durchlauf in eine Richtung
     
     @IBOutlet weak var sizeLabel: UILabel!
     @IBOutlet weak var sizeSlider: UISlider!
 
     @IBOutlet weak var paintView: UIView!
     @IBOutlet weak var clearButton: UIButton!
+    @IBOutlet weak var pimmelSelectButton: UIButton!
     
     
     //MARK: - Outlet actions
@@ -55,7 +58,9 @@ class PimmelController : UIViewController {
     
     override func viewDidLoad() {
         clearButton.layer.cornerRadius = 10
+        pimmelSelectButton.layer.cornerRadius = 10
         paintView.clipsToBounds = true
+        navigationItem.titleView?.tintColor = .white
         startTimer()
         
     }
@@ -68,7 +73,15 @@ class PimmelController : UIViewController {
         let picFrame = CGRect(x: imageX, y: imageY, width: imageSize, height: imageSize)
         
         let imageView = UIImageView(frame: picFrame)
-        imageView.image = picture
+        var pimmelNr = pictureId
+        if pictureId == 0 {
+            pimmelNr = Int.random(in: 1...K.pimmelAnzahl)
+        }
+        
+        
+        
+        imageView.image = UIImage(named: pictureName + String(pimmelNr))
+        
         paintView.addSubview(imageView)
         
         isTouching = true
@@ -113,7 +126,7 @@ class PimmelController : UIViewController {
     func startTimer() {
         let queue = DispatchQueue.main
         sliderTimer = DispatchSource.makeTimerSource(queue: queue)
-        sliderTimer!.schedule(deadline: .now(), repeating: sliderSpeed)
+        sliderTimer!.schedule(deadline: .now(), repeating: .milliseconds(sliderSpeed*10))
         sliderTimer!.setEventHandler {
             self.autoSlider()
         }
@@ -125,5 +138,27 @@ class PimmelController : UIViewController {
         sliderTimer?.cancel()
         sliderTimer = nil
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier{
+        case "SelectSegue":
+            if let newController = segue.destination as? PimmelAuswahlController {
+            newController.delegate = self
+            }
+        case "ColorSegue":
+            if let newController = segue.destination as? ColorPickerController {
+            newController.delegate = self
+            }
+        default: break
+        }
+    }
 
+}
+
+extension UIImageView {
+  func setImageColor(color: UIColor) {
+    let templateImage = self.image?.withRenderingMode(.alwaysTemplate)
+    self.image = templateImage
+    self.tintColor = color
+  }
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gRy-nZ-G5s">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -7,49 +7,55 @@
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Pimmel Controller-->
+        <!--Pimmel Druckerei-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="PimmelController" customModule="PimmelApp_2_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PimmelController" customModule="PimmelApp_2_0" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="afC-l7-BmC">
-                                <rect key="frame" x="0.0" y="119" width="414" height="668"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <rect key="frame" x="0.0" y="163" width="414" height="624"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="55s-p3-cZG">
-                                <rect key="frame" x="0.0" y="44" width="414" height="75"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="75"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fy-My-gHj">
                                         <rect key="frame" x="344" y="7.5" width="60" height="60"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="Api-GW-WjQ"/>
                                             <constraint firstAttribute="width" constant="60" id="NKK-EV-sbb"/>
                                         </constraints>
-                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <color key="tintColor" red="0.072886608539999995" green="0.46282237770000001" blue="0.50557357069999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal">
                                             <color key="titleColor" systemColor="labelColor"/>
                                             <color key="titleShadowColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <imageReference key="image" image="die.face.5" catalog="system" symbolScale="large"/>
+                                            <imageReference key="image" image="pimmel_0" symbolScale="large"/>
                                         </state>
                                         <connections>
                                             <action selector="randomSizePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FeW-5B-KtC"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ef8-82-lTn">
-                                        <rect key="frame" x="282" y="24" width="47" height="27.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ef8-82-lTn">
+                                        <rect key="frame" x="274" y="24" width="55" height="27.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="55" id="eHe-iZ-HS2"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="0.072886608539999995" green="0.46282237770000001" blue="0.50557357069999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="gLk-s9-g5V">
-                                        <rect key="frame" x="65.5" y="22.5" width="208.5" height="31"/>
+                                        <rect key="frame" x="65.5" y="22.5" width="200.5" height="31"/>
+                                        <color key="minimumTrackTintColor" red="0.072886608539999995" green="0.46282237770000001" blue="0.50557357069999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="thumbTintColor" red="0.072886608539999995" green="0.46282237770000001" blue="0.50557357069999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="LYx-YF-p6u"/>
                                             <action selector="sliderTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IaD-jf-Lm9"/>
@@ -58,11 +64,11 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="42" translatesAutoresizingMaskIntoConstraints="NO" id="iRM-Cs-Vdj">
                                         <rect key="frame" x="10" y="24" width="47.5" height="27.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="0.072886608539999995" green="0.46282237770000001" blue="0.50557357069999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration" identifier="topView"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="3tn-lh-fpf"/>
@@ -80,24 +86,35 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vkd-gm-Q4d">
                                 <rect key="frame" x="0.0" y="787" width="414" height="75"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="PU8-JE-Jkp">
-                                        <rect key="frame" x="113.5" y="10" width="187" height="55"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="PU8-JE-Jkp">
+                                        <rect key="frame" x="10" y="10" width="394" height="55"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7n-we-7Br">
-                                                <rect key="frame" x="0.0" y="0.0" width="46" height="55"/>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7n-we-7Br">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="55"/>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <segue destination="2Re-rW-alM" kind="presentation" identifier="ColorSegue" id="vas-Ti-cQT"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8rL-uy-RV5">
-                                                <rect key="frame" x="57" y="0.0" width="46" height="55"/>
-                                                <state key="normal" title="Button"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="184" height="55"/>
+                                                <color key="backgroundColor" red="0.072886608539999995" green="0.46282237770000001" blue="0.50557357069999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="11" maxY="0.0"/>
+                                                <state key="normal" title="Pimmel wählen">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="dlh-Fo-Jjz" kind="show" identifier="SelectSegue" id="ise-Mm-ErS"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6db-KD-ULI">
-                                                <rect key="frame" x="114" y="0.0" width="73" height="55"/>
+                                                <rect key="frame" x="210" y="0.0" width="184" height="55"/>
                                                 <color key="backgroundColor" red="0.072886608539999995" green="0.46282237770000001" blue="0.50557357069999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                 <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
-                                                <state key="normal" title="Clean">
-                                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                                <state key="normal" title="Putzen">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="clearPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CY5-iX-cSB"/>
@@ -106,10 +123,12 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="5wr-9X-v2K"/>
+                                    <constraint firstAttribute="trailing" secondItem="PU8-JE-Jkp" secondAttribute="trailing" constant="10" id="RLs-mq-sTq"/>
                                     <constraint firstAttribute="bottom" secondItem="PU8-JE-Jkp" secondAttribute="bottom" constant="10" id="Vrg-c8-Eif"/>
+                                    <constraint firstItem="PU8-JE-Jkp" firstAttribute="leading" secondItem="vkd-gm-Q4d" secondAttribute="leading" constant="10" id="kz6-qf-og7"/>
                                     <constraint firstItem="PU8-JE-Jkp" firstAttribute="top" secondItem="vkd-gm-Q4d" secondAttribute="top" constant="10" id="nOM-UA-cg8"/>
                                     <constraint firstItem="PU8-JE-Jkp" firstAttribute="centerX" secondItem="vkd-gm-Q4d" secondAttribute="centerX" id="umA-7m-Tf7"/>
                                 </constraints>
@@ -130,20 +149,161 @@
                             <constraint firstItem="vkd-gm-Q4d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xe7-ac-bL6"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Pimmel Druckerei" largeTitleDisplayMode="never" id="nWu-HY-uXa"/>
                     <connections>
                         <outlet property="clearButton" destination="6db-KD-ULI" id="cHb-Zy-mgL"/>
                         <outlet property="paintView" destination="afC-l7-BmC" id="fhj-8b-rMD"/>
+                        <outlet property="pimmelSelectButton" destination="8rL-uy-RV5" id="umx-aL-rDL"/>
                         <outlet property="sizeLabel" destination="Ef8-82-lTn" id="1Lw-fm-2fq"/>
                         <outlet property="sizeSlider" destination="gLk-s9-g5V" id="b8c-Nj-10W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="976.81159420289862" y="93.75"/>
+        </scene>
+        <!--Pimmel Auswählen-->
+        <scene sceneID="0tv-Ab-eD3">
+            <objects>
+                <collectionViewController id="dlh-Fo-Jjz" customClass="PimmelAuswahlController" customModule="PimmelApp_2_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" contentMode="scaleToFill" dataMode="prototypes" id="0qS-uN-OWY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Rhg-vn-Qjp">
+                            <size key="itemSize" width="225" height="226"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="ImageCell" id="jAT-PX-Eho" customClass="PimmelCell" customModule="PimmelApp_2_0" customModuleProvider="target">
+                                <rect key="frame" x="94.5" y="0.0" width="225" height="226"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="W1N-qG-wVF">
+                                    <rect key="frame" x="0.0" y="0.0" width="225" height="226"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XZF-mj-L9N">
+                                            <rect key="frame" x="15" y="15" width="195" height="196"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="XZF-mj-L9N" firstAttribute="leading" secondItem="W1N-qG-wVF" secondAttribute="leading" constant="15" id="3Er-aB-O0z"/>
+                                        <constraint firstAttribute="trailing" secondItem="XZF-mj-L9N" secondAttribute="trailing" constant="15" id="Qer-fy-juh"/>
+                                        <constraint firstAttribute="bottom" secondItem="XZF-mj-L9N" secondAttribute="bottom" constant="15" id="T8d-07-lTw"/>
+                                        <constraint firstItem="XZF-mj-L9N" firstAttribute="top" secondItem="W1N-qG-wVF" secondAttribute="top" constant="15" id="VPM-lX-9jh"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <connections>
+                                    <outlet property="imageView" destination="XZF-mj-L9N" id="DgF-ML-cBY"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="dlh-Fo-Jjz" id="PxH-j0-o65"/>
+                            <outlet property="delegate" destination="dlh-Fo-Jjz" id="QP4-JW-1f3"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Pimmel Auswählen" id="Hu5-m0-Of2"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ahV-Ic-i83" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1830.4347826086957" y="87.053571428571431"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZNE-Lf-PIY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gRy-nZ-G5s" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="awq-0C-azv">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.072886608539999995" green="0.46282237770000001" blue="0.50557357069999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dol-xh-9Ov"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H4m-gV-ETt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="66.666666666666671" y="93.75"/>
+        </scene>
+        <!--Color Picker Controller-->
+        <scene sceneID="m35-Ih-N0s">
+            <objects>
+                <viewController id="2Re-rW-alM" customClass="ColorPickerController" customModule="PimmelApp_2_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3EP-Fb-Kfd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YT8-BK-O5r">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <color key="backgroundColor" red="1" green="0.60113288899999995" blue="0.56326695729999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="EaS-23-DA1">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ColorCelle" id="DaU-oc-m2Z" customClass="ColorCell" customModule="PimmelApp_2_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="43"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="NVx-Xi-QZs">
+                                            <rect key="frame" x="0.0" y="0.0" width="44" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eb3-Zi-aCO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="44" height="43"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="44" id="3Yh-zD-SKN"/>
+                                                        <constraint firstAttribute="height" constant="43" id="KM6-cb-ARS"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="Eb3-Zi-aCO" secondAttribute="bottom" id="4aY-Fa-EAx"/>
+                                                <constraint firstItem="Eb3-Zi-aCO" firstAttribute="leading" secondItem="NVx-Xi-QZs" secondAttribute="leading" id="9ro-2c-pFU"/>
+                                                <constraint firstAttribute="trailing" secondItem="Eb3-Zi-aCO" secondAttribute="trailing" id="J2t-31-XlO"/>
+                                                <constraint firstItem="Eb3-Zi-aCO" firstAttribute="top" secondItem="NVx-Xi-QZs" secondAttribute="top" id="WRX-cY-g6U"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="44" height="43"/>
+                                        <connections>
+                                            <outlet property="colorButton" destination="Eb3-Zi-aCO" id="439-Ai-igD"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sUZ-ot-wi7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YT8-BK-O5r" firstAttribute="top" secondItem="sUZ-ot-wi7" secondAttribute="top" id="NKl-3u-u4k"/>
+                            <constraint firstItem="YT8-BK-O5r" firstAttribute="leading" secondItem="sUZ-ot-wi7" secondAttribute="leading" id="hLJ-5u-sjf"/>
+                            <constraint firstItem="sUZ-ot-wi7" firstAttribute="trailing" secondItem="YT8-BK-O5r" secondAttribute="trailing" id="nHB-IC-1vV"/>
+                            <constraint firstItem="YT8-BK-O5r" firstAttribute="bottom" secondItem="sUZ-ot-wi7" secondAttribute="bottom" id="y5T-tA-VQJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0EB-yi-wR7"/>
+                    <connections>
+                        <outlet property="colorPicker" destination="YT8-BK-O5r" id="nFK-vh-yZH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PjG-TP-Vqd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="824.63768115942037" y="738.61607142857144"/>
         </scene>
     </scenes>
     <resources>
-        <image name="die.face.5" catalog="system" width="128" height="114"/>
+        <image name="pimmel_0" width="225" height="225"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
