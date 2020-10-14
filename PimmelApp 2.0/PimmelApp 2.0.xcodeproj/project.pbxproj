@@ -16,6 +16,7 @@
 		E34AFEF32537448400C70DD8 /* PimmelApp_2_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34AFEF22537448400C70DD8 /* PimmelApp_2_0Tests.swift */; };
 		E34AFEFE2537448400C70DD8 /* PimmelApp_2_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34AFEFD2537448400C70DD8 /* PimmelApp_2_0UITests.swift */; };
 		E3C64A4025376974002CD2F5 /* PimmelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C64A3F25376974002CD2F5 /* PimmelController.swift */; };
+		E3D454812537857600BBF821 /* Pictures.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D454802537857600BBF821 /* Pictures.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		E34AFEFD2537448400C70DD8 /* PimmelApp_2_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PimmelApp_2_0UITests.swift; sourceTree = "<group>"; };
 		E34AFEFF2537448400C70DD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3C64A3F25376974002CD2F5 /* PimmelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PimmelController.swift; sourceTree = "<group>"; };
+		E3D454802537857600BBF821 /* Pictures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pictures.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				E34AFEE92537448300C70DD8 /* Info.plist */,
 				E34AFEE12537448200C70DD8 /* PimmelApp_2_0.xcdatamodeld */,
 				E3C64A3F25376974002CD2F5 /* PimmelController.swift */,
+				E3D454802537857600BBF821 /* Pictures.swift */,
 			);
 			path = "PimmelApp 2.0";
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E34AFED92537448200C70DD8 /* AppDelegate.swift in Sources */,
+				E3D454812537857600BBF821 /* Pictures.swift in Sources */,
 				E3C64A4025376974002CD2F5 /* PimmelController.swift in Sources */,
 				E34AFEDB2537448200C70DD8 /* SceneDelegate.swift in Sources */,
 				E34AFEE32537448200C70DD8 /* PimmelApp_2_0.xcdatamodeld in Sources */,
