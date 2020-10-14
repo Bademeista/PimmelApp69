@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		E34AFED92537448200C70DD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34AFED82537448200C70DD8 /* AppDelegate.swift */; };
 		E34AFEDB2537448200C70DD8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34AFEDA2537448200C70DD8 /* SceneDelegate.swift */; };
-		E34AFEDD2537448200C70DD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34AFEDC2537448200C70DD8 /* ViewController.swift */; };
 		E34AFEE02537448200C70DD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E34AFEDE2537448200C70DD8 /* Main.storyboard */; };
 		E34AFEE32537448200C70DD8 /* PimmelApp_2_0.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E34AFEE12537448200C70DD8 /* PimmelApp_2_0.xcdatamodeld */; };
 		E34AFEE52537448300C70DD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E34AFEE42537448300C70DD8 /* Assets.xcassets */; };
 		E34AFEE82537448300C70DD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E34AFEE62537448300C70DD8 /* LaunchScreen.storyboard */; };
 		E34AFEF32537448400C70DD8 /* PimmelApp_2_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34AFEF22537448400C70DD8 /* PimmelApp_2_0Tests.swift */; };
 		E34AFEFE2537448400C70DD8 /* PimmelApp_2_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34AFEFD2537448400C70DD8 /* PimmelApp_2_0UITests.swift */; };
+		E3C64A4025376974002CD2F5 /* PimmelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C64A3F25376974002CD2F5 /* PimmelController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 		E34AFED52537448200C70DD8 /* PimmelApp 2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PimmelApp 2.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E34AFED82537448200C70DD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E34AFEDA2537448200C70DD8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E34AFEDC2537448200C70DD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E34AFEDF2537448200C70DD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E34AFEE22537448200C70DD8 /* PimmelApp_2_0.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PimmelApp_2_0.xcdatamodel; sourceTree = "<group>"; };
 		E34AFEE42537448300C70DD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		E34AFEF92537448400C70DD8 /* PimmelApp 2.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PimmelApp 2.0UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E34AFEFD2537448400C70DD8 /* PimmelApp_2_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PimmelApp_2_0UITests.swift; sourceTree = "<group>"; };
 		E34AFEFF2537448400C70DD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3C64A3F25376974002CD2F5 /* PimmelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PimmelController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +103,12 @@
 			children = (
 				E34AFED82537448200C70DD8 /* AppDelegate.swift */,
 				E34AFEDA2537448200C70DD8 /* SceneDelegate.swift */,
-				E34AFEDC2537448200C70DD8 /* ViewController.swift */,
 				E34AFEDE2537448200C70DD8 /* Main.storyboard */,
 				E34AFEE42537448300C70DD8 /* Assets.xcassets */,
 				E34AFEE62537448300C70DD8 /* LaunchScreen.storyboard */,
 				E34AFEE92537448300C70DD8 /* Info.plist */,
 				E34AFEE12537448200C70DD8 /* PimmelApp_2_0.xcdatamodeld */,
+				E3C64A3F25376974002CD2F5 /* PimmelController.swift */,
 			);
 			path = "PimmelApp 2.0";
 			sourceTree = "<group>";
@@ -261,8 +261,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E34AFEDD2537448200C70DD8 /* ViewController.swift in Sources */,
 				E34AFED92537448200C70DD8 /* AppDelegate.swift in Sources */,
+				E3C64A4025376974002CD2F5 /* PimmelController.swift in Sources */,
 				E34AFEDB2537448200C70DD8 /* SceneDelegate.swift in Sources */,
 				E34AFEE32537448200C70DD8 /* PimmelApp_2_0.xcdatamodeld in Sources */,
 			);
