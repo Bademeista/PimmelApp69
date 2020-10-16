@@ -18,7 +18,6 @@
 		E3C64A4025376974002CD2F5 /* PimmelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C64A3F25376974002CD2F5 /* PimmelController.swift */; };
 		E3D4548625378B7800BBF821 /* PimmelAuswahlController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D4548525378B7800BBF821 /* PimmelAuswahlController.swift */; };
 		E3D4548B25378BB300BBF821 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D4548A25378BB300BBF821 /* Constants.swift */; };
-		E3D4549325379D0500BBF821 /* ColorPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D4549225379D0500BBF821 /* ColorPickerController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +55,6 @@
 		E3C64A3F25376974002CD2F5 /* PimmelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PimmelController.swift; sourceTree = "<group>"; };
 		E3D4548525378B7800BBF821 /* PimmelAuswahlController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PimmelAuswahlController.swift; sourceTree = "<group>"; };
 		E3D4548A25378BB300BBF821 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		E3D4549225379D0500BBF821 /* ColorPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +115,6 @@
 				E3C64A3F25376974002CD2F5 /* PimmelController.swift */,
 				E3D4548525378B7800BBF821 /* PimmelAuswahlController.swift */,
 				E3D4548A25378BB300BBF821 /* Constants.swift */,
-				E3D4549225379D0500BBF821 /* ColorPickerController.swift */,
 			);
 			path = "PimmelApp 2.0";
 			sourceTree = "<group>";
@@ -272,7 +269,6 @@
 			files = (
 				E34AFED92537448200C70DD8 /* AppDelegate.swift in Sources */,
 				E3D4548625378B7800BBF821 /* PimmelAuswahlController.swift in Sources */,
-				E3D4549325379D0500BBF821 /* ColorPickerController.swift in Sources */,
 				E3C64A4025376974002CD2F5 /* PimmelController.swift in Sources */,
 				E3D4548B25378BB300BBF821 /* Constants.swift in Sources */,
 				E34AFEDB2537448200C70DD8 /* SceneDelegate.swift in Sources */,

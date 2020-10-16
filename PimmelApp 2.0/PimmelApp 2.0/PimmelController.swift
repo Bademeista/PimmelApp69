@@ -12,21 +12,18 @@ class PimmelController : UIViewController {
     //MARK: - Variables
     
     private var isTouching = false
-    private var randomSize = true
     private enum directions {
         case up
         case down
     }
     private var sliderMovement : directions = .up
     private var sliderTimer : DispatchSourceTimer?
-    
     var pictureId = 0
-    var pimmelColor : UIColor = .black
-    
+   
     let pictureName = "pimmel_"
     let angleIncrement : CGFloat = 0.2
     let timeForAnimation = 0.025
-    let sliderSpeed = 10 //Zeit in Sekunden für einen Durchlauf in eine Richtung
+    let sliderSpeed = 1 //Zeit in Sekunden für einen Durchlauf in eine Richtung
     
     @IBOutlet weak var sizeLabel: UILabel!
     @IBOutlet weak var sizeSlider: UISlider!
@@ -108,13 +105,13 @@ class PimmelController : UIViewController {
         if sizeSlider.value == 100 {sliderMovement = .down}
         if sizeSlider.value == 0 {sliderMovement = .up}
         
-        if randomSize {
+//        if randomSize {
             switch sliderMovement {
                 case .up: sizeSlider.value += 1
                 case .down: sizeSlider.value -= 1
             }
-        }
-        print(sizeSlider.value)
+//        }
+//        print(sizeSlider.value)
         setSizeLabel()
     }
     
@@ -145,10 +142,7 @@ class PimmelController : UIViewController {
             if let newController = segue.destination as? PimmelAuswahlController {
             newController.delegate = self
             }
-        case "ColorSegue":
-            if let newController = segue.destination as? ColorPickerController {
-            newController.delegate = self
-            }
+        
         default: break
         }
     }
