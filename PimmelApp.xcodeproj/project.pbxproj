@@ -15,7 +15,6 @@
 		E34AFE93253738CD00C70DD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E34AFE91253738CD00C70DD8 /* LaunchScreen.storyboard */; };
 		E34AFE9E253738CD00C70DD8 /* PimmelAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34AFE9D253738CD00C70DD8 /* PimmelAppTests.swift */; };
 		E34AFEA9253738CD00C70DD8 /* PimmelAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34AFEA8253738CD00C70DD8 /* PimmelAppUITests.swift */; };
-		E34AFEBD253739CA00C70DD8 /* pimmelPic.png in Resources */ = {isa = PBXBuildFile; fileRef = E34AFEBC253739CA00C70DD8 /* pimmelPic.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +49,6 @@
 		E34AFEA4253738CD00C70DD8 /* PimmelAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PimmelAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E34AFEA8253738CD00C70DD8 /* PimmelAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PimmelAppUITests.swift; sourceTree = "<group>"; };
 		E34AFEAA253738CD00C70DD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E34AFEBC253739CA00C70DD8 /* pimmelPic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pimmelPic.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +103,6 @@
 				E34AFE87253738CA00C70DD8 /* ViewController.swift */,
 				E34AFE89253738CA00C70DD8 /* Main.storyboard */,
 				E34AFE8F253738CD00C70DD8 /* Assets.xcassets */,
-				E34AFEBC253739CA00C70DD8 /* pimmelPic.png */,
 				E34AFE91253738CD00C70DD8 /* LaunchScreen.storyboard */,
 				E34AFE94253738CD00C70DD8 /* Info.plist */,
 				E34AFE8C253738CA00C70DD8 /* PimmelApp.xcdatamodeld */,
@@ -234,7 +231,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E34AFEBD253739CA00C70DD8 /* pimmelPic.png in Resources */,
 				E34AFE93253738CD00C70DD8 /* LaunchScreen.storyboard in Resources */,
 				E34AFE90253738CD00C70DD8 /* Assets.xcassets in Resources */,
 				E34AFE8B253738CA00C70DD8 /* Main.storyboard in Resources */,
